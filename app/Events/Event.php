@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Events;
+namespace Seia\Core\Events;
 
 abstract class Event
 {

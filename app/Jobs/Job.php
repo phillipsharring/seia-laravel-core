@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Jobs;
+namespace Seia\Core\Jobs;
 
 use Illuminate\Bus\Queueable;
 
