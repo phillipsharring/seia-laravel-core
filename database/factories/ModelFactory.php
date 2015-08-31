@@ -11,11 +11,32 @@
 |
 */
 
-$factory->define(App\User::class, function (Faker\Generator $faker) {
+$factory->define(Seia\Core\Model\User::class, function(Faker\Generator $faker) {
     return [
-        'name' => $faker->name,
+        'first_name' => $faker->firstName,
+        'last_name' => $faker->lastName,
         'email' => $faker->email,
         'password' => bcrypt(str_random(10)),
         'remember_token' => str_random(10),
+    ];
+});
+
+$factory->define(Seia\Core\Model\UserMeta::class, function(Faker\Generator $faker) {
+    return [
+        'created_by' => 1,
+        'field_name' => 'birth_date',
+        'field_type' => 'date',
+        'date_value' => $faker->date(),
+    ];
+});
+
+$factory->define(Seia\Core\Model\Group::class, function(Faker\Generator $faker)
+{
+    $name = $faker->name;
+    $slug = str_slug($name);
+    return [
+        'created_by' => 1,
+        'name' => $name,
+        'slug' => $slug,
     ];
 });

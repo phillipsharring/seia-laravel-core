@@ -140,10 +140,10 @@ return [
         /*
          * Application Service Providers...
          */
-        App\Providers\AppServiceProvider::class,
-        App\Providers\AuthServiceProvider::class,
-        App\Providers\EventServiceProvider::class,
-        App\Providers\RouteServiceProvider::class,
+        Seia\Core\Providers\AppServiceProvider::class,
+        Seia\Core\Providers\AuthServiceProvider::class,
+        Seia\Core\Providers\EventServiceProvider::class,
+        Seia\Core\Providers\RouteServiceProvider::class,
 
     ],
 
