@@ -1,0 +1,14 @@
+body.admin {
+  background-color: #f7f7f7;
+
+  .breadcrumb {
+    background-color: #e7e7e7;
+
+    > li {
+
+      + li:before {
+        color: #777;
+      }
+    }
+  }
+}

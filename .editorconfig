@@ -13,5 +13,8 @@ indent_size = 2
 [*-handlebar.php]
 indent_size = 2
 
+[*.scss]
+indent_size = 2
+
 [VERSION]
 insert_final_newline = false

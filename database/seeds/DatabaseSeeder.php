@@ -23,8 +23,8 @@ class DatabaseSeeder extends Seeder
         $admin = User::create([
             'first_name' => 'Admin',
             'last_name' => 'Admin',
-            'email' => $faker->email,
-            'password' => bcrypt(str_random(10)),
+            'email' => 'admin@admin.com',
+            'password' => bcrypt('admin'),
             'remember_token' => str_random(10),
         ]);
 
@@ -46,6 +46,11 @@ class DatabaseSeeder extends Seeder
 
         $this->call(GroupsTableSeeder::class);
         $this->call(UsersTableSeeder::class);
+        $this->call(LanguagesTableSeeder::class);
+        $this->call(ContentTypesTableSeeder::class);
+        $this->call(CategoriesTableSeeder::class);
+        $this->call(ContentsTableSeeder::class);
+        $this->call(RoutesTableSeeder::class);
 
         Model::reguard();
     }

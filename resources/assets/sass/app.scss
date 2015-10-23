@@ -1,2 +1,20 @@
-// @import "node_modules/bootstrap-sass/assets/stylesheets/bootstrap";
 
+
+$breadcrumb-separator: ">" !default;
+
+@import "bootstrap";
+
+/* app.css */
+
+body {
+    font-family: Verdana, sans-serif;
+    margin: 0 10%;
+}
+
+.breadcrumb {
+    > li {
+        + li:before {
+            content: "#{$breadcrumb-separator}" !important;
+        }
+    }
+}
