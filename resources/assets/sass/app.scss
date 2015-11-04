@@ -1,4 +1,6 @@
+$font-family-sans-serif: Verdana, "Helvetica Neue", Helvetica, Arial, sans-serif !default;
 
+$headings-font-weight: 700 !default;
 
 $breadcrumb-separator: ">" !default;
 
@@ -7,7 +9,7 @@ $breadcrumb-separator: ">" !default;
 /* app.css */
 
 body {
-    font-family: Verdana, sans-serif;
+    //font-family: Verdana, sans-serif;
     margin: 0 10%;
 }
 
@@ -18,3 +20,12 @@ body {
         }
     }
 }
+
+//*
+.editable {
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  background: #fff;
+  padding: 6px 12px;
+}
+// */

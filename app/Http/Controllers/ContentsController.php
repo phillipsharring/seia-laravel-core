@@ -115,14 +115,14 @@ class ContentsController extends Controller
     /**
      * Update the specified resource in storage.
      *
-     * @param  Request  $request
+     * @param  SaveContentRequest  $request
      * @param  int  $id
      * @return Response
      */
-    public function update(Request $request, $id)
+    public function update(SaveContentRequest $request, $id)
     {
         $content = Content::find($id);
-        $content->fill($request->only($this->getRequestParams()))->save();
+        $content->fill($request->input())->save();
         return redirect()->route('contents.admin')->with('message', 'Content was updated');
     }
 

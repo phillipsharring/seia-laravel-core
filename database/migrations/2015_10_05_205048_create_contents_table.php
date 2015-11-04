@@ -27,6 +27,7 @@ class CreateContentsTable extends Migration
             $table->string('summary')->nullable();
             $table->longText('body');
             $table->string('media')->nullable();
+            $table->boolean('current_version')->default(false);
             $table->string('status')->default('approved'); // submitted, rejected, approved, expired, revision
             $table->timestamps();
             $table->foreign('content_type_id')->references('id')->on('content_types');

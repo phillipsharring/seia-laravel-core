@@ -11,7 +11,7 @@
     <li class="active">Edit Contents</li>
   </ol>
 
-  {!! Form::model($content, ['route' => 'contents.update', 'method' => 'PUT', 'role' => 'form']) !!}
+  {!! Form::model($content, ['route' => ['contents.update', $content], 'method' => 'PUT', 'role' => 'form']) !!}
 
     @include('contents.form')
 
