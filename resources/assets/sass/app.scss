@@ -4,7 +4,11 @@ $headings-font-weight: 700 !default;
 
 $breadcrumb-separator: ">" !default;
 
+$icon-font-path: "/fonts/bootstrap/";
+$fa-font-path:   "/fonts/fontawesome/";
+
 @import "bootstrap";
+@import "font-awesome";
 
 /* app.css */
 
