@@ -25,6 +25,11 @@ class Content extends Model
         'status',
     ];
 
+    public function meta()
+    {
+        return $this->hasMany(ContentMeta::class);
+    }
+
     public function type()
     {
         return $this->belongsTo(ContentType::class, 'content_type_id', 'id');
