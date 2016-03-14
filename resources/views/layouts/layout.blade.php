@@ -8,7 +8,7 @@
     @yield('stylesheets')
     <link href="{{ asset('favicon.ico') }}" rel="shortcut icon" type="image/vnd.microsoft.icon">
     <script type="text/javascript">
-      var baseUrl = '{{ url() }}';
+      var baseUrl = '{{ url('') }}';
       @yield('header-scripts')
     </script>
     <!--[if lt IE 9]><script type="text/javascript" src="{{ asset('js/html5shiv.min.js') }}"></script><![endif]-->

@@ -4,12 +4,21 @@
     "keywords": ["framework", "laravel"],
     "license": "MIT",
     "type": "project",
+    "repositories": [
+        {
+            "type": "git",
+            "url": "https://github.com/philsown/seia-laravel-pages"
+        }
+    ],
     "require": {
         "php": ">=5.5.9",
-        "laravel/framework": "5.1.*",
-        "illuminate/html": "^5.0"
+        "laravel/framework": "5.2.*",
+        "philsown/seia-laravel-pages": "dev-master",
+        "laravelcollective/html": "^5.2"
     },
     "require-dev": {
+        "symfony/dom-crawler": "~3.0",
+        "symfony/css-selector": "~3.0",
         "fzaninotto/faker": "~1.4",
         "mockery/mockery": "0.9.*",
         "phpunit/phpunit": "~4.0",
@@ -48,5 +57,7 @@
     },
     "config": {
         "preferred-install": "dist"
-    }
+    },
+    "minimum-stability": "beta",
+    "prefer-stable": true
 }
